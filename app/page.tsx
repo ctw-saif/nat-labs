@@ -4,9 +4,8 @@ import Image from "next/image";
 const CAPABILITIES = [
   "Average TAT under 24 hours post specimen receipt",
   "Full-service, onsite facility testing and specimen collection",
-  "RT-PCR testing methodology",
-  "EUA (emergency use authorization) testing validation",
-  "Anterior nares, nasopharyngeal and saliva specimen types",
+  "Dried blood spot (DBS) finger-prick specimen collection",
+  "PEth alcohol biomarker and toxicology confirmatory testing",
   "Automated specimen processing",
   "Acceptance of all insurance providers with no cost to patients",
   "Competitive contract pricing",
@@ -53,7 +52,8 @@ export default function Home() {
           <div className="md:col-span-3">
             <div className="section-eyebrow mb-4">SpotCheck Plus · Hayward, CA</div>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.02] text-foreground">
-              The key to <span className="text-primary">early intervention</span>
+              <span className="text-primary">SpotCheck Plus</span>: PEth Alcohol
+              and Toxicology Testing
             </h1>
             <p className="mt-6 text-lg md:text-xl text-foreground-muted max-w-xl leading-relaxed">
               The industry's first all-in-one dried blood spot solution for PEth

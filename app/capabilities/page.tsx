@@ -9,18 +9,6 @@ export const metadata: Metadata = {
     "Explore National Labs' clinical testing services including toxicology, PEth alcohol biomarker analysis, and SpotCheck Plus dried blood spot specimen processing.",
 };
 
-const COVID_FEATURES = [
-  "Average TAT of <24 hours post specimen receipt",
-  "Full service, onsite facility testing and specimen collection",
-  "RT-PCR testing methodology",
-  "EUA (emergency use authorization) testing validation",
-  "Anterior nares, nasopharyngeal and saliva specimen types",
-  "Automated specimen processing",
-  "Acceptance of all insurance providers with no cost to patients",
-  "Competitive contract pricing",
-  "Results reporting via electronic web portal with EMR integration available",
-];
-
 const SERVICES = [
   {
     tag: "Clinic Value",
@@ -57,44 +45,6 @@ export default function CapabilitiesPage() {
           { label: "Clinical Services" },
         ]}
       />
-
-      {/* COVID Features */}
-      <section className="py-20 md:py-24">
-        <div className="container-narrow">
-          <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="md:sticky md:top-28">
-              <div className="section-eyebrow mb-3">COVID-19 Services</div>
-              <h2 className="text-3xl md:text-4xl font-bold leading-tight">
-                Fast, accurate COVID-19 screening.
-              </h2>
-              <p className="mt-5 text-foreground-muted leading-relaxed">
-                Ensuring the health and safety of your patients, employees, and
-                community at large requires a complete and robust solution for
-                fast COVID-19 screening. We've built ours end-to-end.
-              </p>
-              <Link href="/contact" className="btn-primary mt-8">
-                Schedule a Consultation
-              </Link>
-            </div>
-
-            <ul className="space-y-3">
-              {COVID_FEATURES.map((f, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-4 p-5 rounded-2xl bg-surface-tint/60 border border-border-subtle"
-                >
-                  <div className="shrink-0 w-8 h-8 rounded-full bg-primary text-white grid place-items-center font-display text-xs">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <p className="text-sm text-foreground-muted leading-relaxed pt-1">
-                    {f}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
 
       {/* Specialist Services */}
       <section className="py-20 md:py-24 bg-gradient-to-b from-surface-tint/60 to-white">
