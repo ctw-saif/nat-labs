@@ -97,9 +97,11 @@ export default function Footer() {
             Rights Reserved
           </div>
           <div>
-            Powered by{" "}
+            Built by:{" "}
             <a
-              href="https://caltechweb.com"
+              href="https://www.caltechweb.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary-soft hover:text-white"
             >
               CalTech Web
